@@ -1,0 +1,41 @@
+.container {
+    height: 20rem;
+    width: 100rem;
+    background: pink;
+    opacity: 0.5;
+    position: relative;
+}
+
+.child {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+
+    animation-name: left-to-right;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0)
+    }
+
+    33% {
+
+        background-color: green;
+    }
+
+    66% {
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translateX(90rem) rotateZ(360deg);
+
+    }
+}

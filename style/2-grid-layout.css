@@ -1,0 +1,30 @@
+h1 {
+    font-size: 3rem;
+}
+
+header { grid-area: header; }
+main { grid-area: main; }
+nav { grid-area: nav; }
+aside { grid-area: sidebar; }
+footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'sidebar sidebar main main main main'
+    'sidebar sidebar main main main main'
+    'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > * {
+    border: 2px solid white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white
+}

@@ -2,6 +2,10 @@ body {
     font-size: 10px;
 }
 
+hr {
+    margin: 3rem 0;
+}
+
 .image-text {
     text-align: center;
 }
@@ -14,8 +18,8 @@ body {
     letter-spacing: 0;
     text-transform: uppercase;
 
-    background-image: url("img/new-york.jpeg");
-    -webkit-background-image: url("img/new-york.jpeg");
+    background-image: url("../img/new-york.jpeg");
+    -webkit-background-image: url("../img/new-york.jpeg");
 
     background-size: cover;
 
